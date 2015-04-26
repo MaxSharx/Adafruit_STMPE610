@@ -13,7 +13,7 @@
   Written by Limor Fried/Ladyada for Adafruit Industries.
   MIT license, all text above must be included in any redistribution
  ****************************************************/
-#include "Adafruit_STMPE610.h"
+#include "Adafruit_STMPE610/Adafruit_STMPE610.h"
 
 #define STMPE_CS D5
 //#define STMPE_SDI A5
