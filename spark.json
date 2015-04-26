@@ -1,0 +1,7 @@
+{
+    "name": "Adafruit_STMPE610",
+    "version": "1.0.0",
+    "author": "Written by Limor Fried/Ladyada for Adafruit Industries. Edited by Max!",
+    "license": "MIT license",
+    "description": "This is a library for the Adafruit STMPE610 Resistive touch screen controller breakout"
+}
