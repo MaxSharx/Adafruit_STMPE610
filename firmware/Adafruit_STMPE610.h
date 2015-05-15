@@ -13,6 +13,8 @@
   Written by Limor Fried/Ladyada for Adafruit Industries.
   MIT license, all text above must be included in any redistribution
  ****************************************************/
+#ifndef adafruit_STMPE610_h
+#define adafruit_STMPE610_h
 
 #if defined(SPARK)
   #include "application.h"
@@ -150,3 +152,4 @@ class Adafruit_STMPE610{
 
   int m_spiMode;
 };
+#endif
