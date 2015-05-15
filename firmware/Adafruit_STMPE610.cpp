@@ -302,7 +302,7 @@ uint8_t Adafruit_STMPE610::readRegister8(uint8_t reg) {
   return x;
 }
 uint16_t Adafruit_STMPE610::readRegister16(uint8_t reg) {
-  uint16_t x;
+  uint16_t x = 0;
   if (_CS == -1) {
    // use i2c
     Wire.beginTransmission(_i2caddr);
@@ -320,7 +320,7 @@ uint16_t Adafruit_STMPE610::readRegister16(uint8_t reg) {
     if (_CLK == -1) SPI.beginTransaction(mySPISettings);
 #endif
     digitalWrite(_CS, LOW);
-    SPI.transfer(0x80 | reg);
+    SPI.transfer((0x80|reg));
     SPI.transfer(0x00);
     x = spiIn();
     digitalWrite(_CS, HIGH);
